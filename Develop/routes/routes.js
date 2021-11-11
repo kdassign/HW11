@@ -10,11 +10,11 @@ module.exports = app => {
 
     app.post("/api/notes", function (req, res) {
         let noteData = JSON.parse(fs.readFileSync("db/db.json", "utf8"));
-
+    // gives the current note an id
         req.body.id = noteData.length;
-
+    // pushes the current note to noteData
         noteData.push(req.body);
-
+    //writes right back to db
         fs.writeFileSync("db/db.json", JSON.stringify(noteData));
         console.log("saved to json file: ", req.body);
         res.json(noteData);
