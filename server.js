@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname,)));
 
-require('./routes/routes')(app);
+require('./routes/routes')(app), "public";
 
 
 app.listen(PORT, function () {
