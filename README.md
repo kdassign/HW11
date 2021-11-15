@@ -15,4 +15,4 @@ The majority of the work was done through the Backend using the 'server.js' and 
 
 [Deployed Heroku Site](https://peaceful-crag-93322.herokuapp.com/)
 
-[GitHub](https://github.com/kdassign/HW11)
+[GitHub](https://github.com/kdassign)
